@@ -1,0 +1,19 @@
+*{
+ margin: 0; 
+ padding: 0;  
+}
+
+body{
+    margin: 0;
+}
+
+.logo-nav{
+    width: 40px;
+}
+.social {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 150px 20px 150px;
+}

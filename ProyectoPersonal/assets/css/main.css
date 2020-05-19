@@ -1,0 +1,58 @@
+*{
+    margin: 0; 
+    padding: 0;  
+}
+   
+body{
+    margin: 0;
+}
+   
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 150px 20px 150px;
+}
+nav a{
+    text-decoration: none;
+}
+.logo-icon{
+    width: 40px;
+}
+
+#slogan{
+    background-image: url("https://fakeimg.pl/250x100/");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 45vh;
+}
+
+#ultimo_material{
+    text-align: center;
+    margin: 5%;
+}
+
+.colaborador{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedor-div{
+    width: 45%;
+    height: 30%;
+    margin: 10% 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info_colaboradores{
+    display: flex;
+    flex-direction: column;
+}
