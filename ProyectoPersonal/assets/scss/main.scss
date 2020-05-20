@@ -1,0 +1,112 @@
+@import "variables";
+
+*{
+    margin: 0; 
+    padding: 0;  
+}
+   
+body{
+    margin: 0;
+}
+h2{
+    text-align: center;
+}
+
+
+@mixin padding-interno($interno){
+    padding-top: $interno;
+    padding-bottom: $interno;
+}
+   
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 150px 20px 150px;
+
+    a{
+        text-decoration: none;
+    }
+    
+}
+.logo-icon{
+    width: 40px;
+}
+
+#slogan{
+    background-image: url("https://fakeimg.pl/250x100/");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.social{
+    position: fixed;
+    left: 0;
+    top: 400px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+}
+
+#colaboraciones{
+    display: flex;
+    flex-wrap: wrap;
+
+    .visualizador{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        @include padding-interno($padding-botton-top);
+    
+        #visualizador-video{
+            width: 60%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+        }
+        #visualizador-colleccion{
+            width: 30%;
+            overflow:scroll;
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+        
+            div{
+                height: 50px;
+                padding: 5%;
+            }
+        }
+    }
+}
+
+
+.video-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+    width: 100%;
+}
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/*video, iframe {
+  width: 100% !important;
+  height: auto !important;
+}*/
+
